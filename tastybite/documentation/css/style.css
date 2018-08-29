@@ -1,0 +1,304 @@
+/* Big Deals theme Stylesheet */
+
+
+/*
+*!IMPORTANT: Don't modify these files, use custom-styles.css or
+
+/** Theme Name: Big Dreams
+* Theme URI: http: //dazzlersoft.com
+* Author: Ziyaul * Author URI: http: //dazzlersoft.com
+* Description: Flexible theme for Graphic  Design Studios any other Graphics and sound  business.
+* Version: 1.0* License: ThemeForest Standard License
+* License URI: http: //themeforest.net/licenses/standard* Use this theme to make a good looking and polished website with minimal effort.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #363636;
+    color: #fff;
+}
+.container {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-weight:700;
+    text-transform: capitalize;
+}
+h3{
+    margin:40px 0 20px;
+    color: #ffad18;
+}
+h4{
+    display: inline-block;
+    margin: 20px 0;
+    border: 1px solid #fff;
+    padding: 8px 15px;
+}
+h3,h4{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+a{
+    text-transform: capitalize;
+}
+a.view-demo {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s all ease-in-out;
+}
+.view-demo span {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    background-color: #ffad18;
+    border-radius: 10px;
+    color: #fff;
+    top: 50%;
+    font-size: 1em;
+    text-transform: uppercase;   
+    padding: 9px 20px;
+    text-align: center;
+    left: 50%;
+    transition: .3s all ease-in-out;
+    transform: translate(-50%, -50%);
+}
+a.view-demo:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+a.view-demo img{
+    transition: .3s all ease-in-out;
+}
+a.view-demo:hover img {
+    opacity: 0.5;
+}
+#credit a{
+    color: #fff;
+    transition: all .3s ease;
+}
+
+#credit a:hover{
+    color: #ffad18;
+}
+.v-demo{
+    position: relative;
+    transition: .3s all ease;
+}
+.v-demo:hover img{
+    opacity: .5
+}
+.v-demo span{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    height: 30px;
+    width: 100px;
+    display: block;
+    border-radius: 10px;
+    color: #fff;
+    top: 50%;
+    background-color:#ffad18;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding-top: 4px;
+    text-align: center;
+    left: 50%;
+    transition: .3s all ease;
+    transform: translate(-50%, -50%);
+}
+.v-demo:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper {
+    overflow: hidden;
+}
+
+header {
+    background: #ffad18;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.side-nav {
+    width: 300px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 115px;
+    -webkit-box-shadow: 3px 0 10px 1px rgba(0, 0, 0, .07);
+    -moz-box-shadow: 3px 0 10px 1px rgba(0, 0, 0, .07);
+    box-shadow: 3px 0 10px 1px rgba(0, 0, 0, .07);
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.main-content {
+    max-width: 1200px;
+}
+
+.wrapper {
+    position: relative;
+    margin-left: 300px;
+}
+
+#doc-menu li {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#doc-menu>li:last-child {
+    border-bottom: none;
+}
+
+#doc-menu li ul a {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+#doc-menu li ul a:hover {
+    color: #ffad18;
+    font-weight: bold;
+}
+
+#doc-menu .nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 0 15px 25px;
+    color: #000
+}
+
+#doc-menu>li>a {
+    color: #424242;
+    font-weight: 800;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin: 10px auto 0;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px 10px;
+}
+
+#doc-menu>li.active>a {
+  color: #ffad18;
+}
+
+#doc-menu>.active .active a {
+    color: #ffad18;
+    font-weight: bold;
+}
+.affix {
+    top: 0;
+    z-index: 9999 !important;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: transparent;
+    color: #ffad18;
+}
+
+.section-block {
+    padding: 10px ;
+}
+
+.doc-sub-menu {
+    display: none;
+}
+
+#doc-menu>li>a:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    top: 10px;
+    transition: .3s all ease-in-out;
+}
+
+#doc-menu>li>a.open:after {
+    content: "\f107";
+    transform: rotate(-180deg);
+}
+#doc-menu>li>a.no-icon:after{
+    content: "";
+}
+
+.section-block h2 {
+    font-weight: 600;
+}
+
+.open {
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+    background: #FFF;
+    padding: 15px 0 40px;
+}
+
+.copyright p {
+    margin: 0 auto;
+}
+
+.affix {
+    position: fixed;
+}
+
+@media (max-width:768px) {
+    .side-nav {
+        display: none;
+    }
+    .wrapper {
+        margin: 0 auto;
+    }
+}
+h2{
+        margin-top: 0;
+        padding: 25px 0 5px 0;
+        font-size:35px;
+        text-transform: capitalize;
+        font-weight: 600;
+}
+.side-menus a {
+    position: fixed;
+    height: 30px;
+    width: 150px;
+    right: 0;
+    background: #fff;
+    color: #ffad18;
+    padding: 4px 8px;
+    text-decoration: none;
+    z-index: 99999;
+    top: 20%;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: .3s all ease-in-out;
+    right: -120px;
+}
+.side-menus a i {
+    padding-right: 15px;
+    font-size: 15px;
+}
+.side-menus a:hover {
+    right: 0;
+    background-color: #ffad18;
+    color: #fff;
+}

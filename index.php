@@ -52,8 +52,98 @@
     </div>
     <!-- loader ends  -->
     <div class="wrapper">
-      <?php
-       include('header.php');?>
+        <header class="header">
+            <div class="container">
+                <div class="menubar">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar navbar-static-top">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="images/logo.png" class="img-responsive" alt="logo">
+                                    </a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse ">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="res-btn">
+                                            <a href="reservation.html" class="book-btn">Book a table</a>
+                                        </li>
+                                        <li class="res-btn">
+                                            
+                                            <a href="#" class="book-btn">
+                                            <i class="fa fa-shopping-cart "></i>
+                                            Cart</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right" id="main-menu">
+                                        <li class="active">
+                                            <a href="index.html">
+                                                Home
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="about.html">About</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                Menu
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="food-menu.html">Food menu</a>
+                                                </li>
+                                               
+
+                                            </ul>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                Reservation
+                                                
+                                            </a>
+                                           
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                Gallery
+                                                
+                                            </a>
+                                           
+                                        </li>
+
+                                        <li>
+                                            <a href="contact.html">
+                                                Contact
+
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="mobile-menu" data-logo="images/logo.png">
+
+
+            </div>
+        </header>
         <section class="sliders">
             <div class="testy-slider owl-carousel" data-items="1" data-loop="true" data-smart-speed="400" data-dots="true" data-nav="true"
                  data-r-x-small="1" data-r-x-small-nav="true" data-r-x-small-dots="true" data-r-x-medium="1" data-r-x-medium-nav="false"
@@ -61,7 +151,7 @@
                  data-r-medium-nav="true" data-r-medium-dots="false" data-r-large="1" data-r-large-nav="true" data-r-large-dots="false">
 
                 <div class="item">
-                    <img src="images/slider.jpg" alt="slider image">
+                    <img src="images/slider1.jpg" alt="slider image">
                     <div class="container">
                         <div class="slider-text">
 
@@ -69,7 +159,7 @@
                                 Welcome To
                                 <span>Biryani Pot</span>
                             </h2>
-                            <p class="slide-desc">Biryani Pot a traditional Authentic Hyderabadi food house.</p>
+                            <p class="slide-desc">Authentic Hyderabadi food house.</p>
                             <a href="reservation.html" class="btn-custom">Reserve now</a>
 
                             <div class="hours-box">
@@ -79,7 +169,7 @@
                                     <!-- hours  -->
                                     <div class="col-xs-6 hours_class">
                                        <div class="hours">
-
+                                            
                                             <h4 class="hours-title">Mon-Fri</h4>
                                             <p class="hours-text"> 11:30am – 02:30pm </p>
                                             <p class="hours-text"> 05:00pm – 10:00pm </p>
@@ -89,7 +179,7 @@
                                     <!-- hours  -->
                                     <div class="col-xs-6 hours_class">
                                         <div class="hours">
-
+                                            
                                             <h4 class="hours-title">Sat </h4>
                                             <p class="hours-text"> 11:30am – 03:00pm </p>
                                             <p class="hours-text"> 05:00pm – 10:00pm </p>
@@ -99,7 +189,7 @@
                                     <!-- hours  -->
                                     <div class="col-xs-6 hours_class">
                                         <div class="hours">
-
+                                           
                                             <h4 class="hours-title">Sunday</h4>
                                             <p class="hours-text">11:30am – 03:30pm</p>
                                             <p class="hours-text">05:00pm – 10:00pm</p>
@@ -107,7 +197,7 @@
                                     </div>
                                     <!-- hours ends  -->
                                     <!-- hours  -->
-
+                                   
                                     <!-- hours ends  -->
                                 </div>
                             </div>
@@ -115,14 +205,14 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img src="images/slider.jpg" alt="slider image">
+                    <img src="images/slider2.jpg" alt="slider image">
                     <div class="container">
                         <div class="slider-text">
                             <h2>
                                 Welcome To
                                 <span>Biryani Pot</span>
                             </h2>
-                            <p class="slide-desc">Biryani Pot a traditional Authentic Hyderabadi food house.</p>
+                            <p class="slide-desc">Excellent Services & Friendly Staff.</p>
                             <a href="reservation.html" class="btn-custom">Reserve now</a>
                             <div class="hours-box">
                                 <h3>Operating Hours</h3>
@@ -131,7 +221,7 @@
                                     <!-- hours  -->
                                     <div class="col-xs-6 hours_class">
                                         <div class="hours">
-
+                                            
                                             <h4 class="hours-title">Mon-Fri</h4>
                                             <p class="hours-text"> 11:30am – 02:30pm </p>
                                             <p class="hours-text"> 05:00pm – 10:00pm </p>
@@ -141,7 +231,7 @@
                                     <!-- hours  -->
                                     <div class="col-xs-6 hours_class">
                                         <div class="hours">
-
+                                            
                                             <h4 class="hours-title">Sat </h4>
                                             <p class="hours-text"> 11:30am – 03:00pm </p>
                                             <p class="hours-text"> 05:00pm – 10:00pm </p>
@@ -151,7 +241,7 @@
                                     <!-- hours  -->
                                     <div class="col-xs-6 hours_class">
                                         <div class="hours">
-
+                                           
                                             <h4 class="hours-title">Sunday</h4>
                                             <p class="hours-text">11:30am – 03:30pm</p>
                                             <p class="hours-text">05:00pm – 10:00pm</p>
@@ -159,7 +249,59 @@
                                     </div>
                                     <!-- hours ends  -->
                                     <!-- hours  -->
+                                    
+                                    <!-- hours ends  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider3.jpg" alt="slider image">
+                    <div class="container">
+                        <div class="slider-text">
+                            <h2>
+                                Welcome To
+                                <span>Biryani Pot</span>
+                            </h2>
+                            <p class="slide-desc"> Authentic Hyderabadi food house.</p>
+                            <a href="reservation.html" class="btn-custom">Reserve now</a>
+                            <div class="hours-box">
+                                <h3>Operating Hours</h3>
 
+                                <div class="row">
+                                    <!-- hours  -->
+                                    <div class="col-xs-6 hours_class">
+                                        <div class="hours">
+                                            
+                                            <h4 class="hours-title">Mon-Fri</h4>
+                                            <p class="hours-text"> 11:30am – 02:30pm </p>
+                                            <p class="hours-text"> 05:00pm – 10:00pm </p>
+                                        </div>
+                                    </div>
+                                    <!-- hours ends  -->
+                                    <!-- hours  -->
+                                    <div class="col-xs-6 hours_class">
+                                        <div class="hours">
+                                            
+                                            <h4 class="hours-title">Sat </h4>
+                                            <p class="hours-text"> 11:30am – 03:00pm </p>
+                                            <p class="hours-text"> 05:00pm – 10:00pm </p>
+                                        </div>
+                                    </div>
+                                    <!-- hours ends  -->
+                                    <!-- hours  -->
+                                    <div class="col-xs-6 hours_class">
+                                        <div class="hours">
+                                           
+                                            <h4 class="hours-title">Sunday</h4>
+                                            <p class="hours-text">11:30am – 03:30pm</p>
+                                            <p class="hours-text">05:00pm – 10:00pm</p>
+                                        </div>
+                                    </div>
+                                    <!-- hours ends  -->
+                                    <!-- hours  -->
+                                    
                                     <!-- hours ends  -->
                                 </div>
                             </div>
@@ -167,6 +309,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
         <!-- about section  -->
         <section class="about-section section-padding">
@@ -174,57 +317,40 @@
                 <div class="row">
                     <div class="col-md-6 hidden-sm hidden-xs">
                         <div class="chef-figure">
-                            <img src="images/abt-chef.png" alt="about chef pic" class="img-responsive">
+                            <img src="images/about.png" alt="about chef pic" class="img-responsive" height="450px";>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-xs-11 col-xs-offset-1">
                                 <h2 class="main-title text-right">
-                                    <span class="bg-reverse">About Us</span>
+                                    <span class="bg-reverse">Biryani Pot</span>
                                 </h2>
                             </div>
                         </div>
                         <div class="abt-content">
-                            <p>
-                                Biryani Pot a traditional Authentic Hyderabadi food house. We at Biryani Pot made a commitment to bring a variety of high quality Indian dishes for our local community.Biryani Pot offers delicious dining, takeout and delivery to Nashua, NH. Biryani Pot is a cornerstone in the Nashua community and has been recognized for its outstanding Indian cuisine, excellent service and friendly staff. The customer service is exceptional, where you can't wait to go back. Our restaurant is nice and clean, food is amazing and prices are very reasonable!
+                            <p style="text-align: justify";>
+                                Biryani Pot a traditional Authentic Hyderabadi food house. 
+                                We at Biryani Pot made a commitment to bring a variety of high quality Indian dishes for our local community.
+                                Biryani Pot offers delicious dining, takeout and delivery to Nashua, NH. 
+                                Biryani Pot is a cornerstone in the Nashua community and has been recognized for its outstanding Indian cuisine, 
+                                excellent service and friendly staff. The customer service is exceptional, where you can't wait to go back. 
+                                Our restaurant is nice and clean, food is amazing and prices are very reasonable!
                             </p>
-                            <ul class="food-list">
-                                <li>Aenean massa. Cum sociis natoque penatibus magnis dis parturient montes.</li>
-                                <li>Aenean massa. Cum sociis natoque penatibus magnis dis parturient montes.</li>
-                                <li>Aenean massa. Cum sociis natoque penatibus magnis dis parturient montes.</li>
-                                <li>Aenean massa. Cum sociis natoque penatibus magnis dis parturient montes.</li>
-                            </ul>
+                            
 
                             <div class="abt-quality">
                                 <div class="row">
                                     <div class="col-xs-6 sm-full sm-text-center">
-                                        <div class="quality-box">
-                                            <div class="icon">
-                                                <i class="flaticon-tray-1"></i>
-                                            </div>
-
-                                            <h4 class="quality-title">
-                                                <a href="#">100 % Fresh Organic Foods</a>
-                                            </h4>
-                                            <p>
-                                                Dolor sit amet consectetuer adipiscn elit commodo ligula eget dolor. Aenean etsa massa Cum sociis natoque.
-                                            </p>
+                                        <div class="quality-box">                                            
+                                            <a href="reservation.html" class="btn-custom">Reserve now</a>                                           
                                         </div>
                                     </div>
                                     <div class="col-xs-6 sm-full sm-text-center">
                                         <div class="quality-box">
                                             <div class="icon">
-                                                <i class="flaticon-chef"></i>
-                                            </div>
-
-                                            <h4 class="quality-title">
-                                                <a href="#">Great Food Taste and quality</a>
-                                            </h4>
-                                            <p>
-                                                Dolor sit amet consectetuer adipiscn elit commodo ligula eget dolor. Aenean etsa massa Cum sociis natoque.
-                                            </p>
-
+                                            <a href="reservation.html" class="btn-custom">Order now</a> 
+                                            </div>                                           
                                         </div>
                                     </div>
                                 </div>
@@ -824,35 +950,183 @@
         </section>
         <br>
         <!-- call out section ends -->
-
-
+     
+        
         <!-- newsletter section  -->
-        <section class="newsletter-section section-padding">
+        
+        <!-- newsletter section ends  -->
+        <!-- footer  -->
+        <footer class="footer section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7">
-                        <h2 class="newsletter-title ">
-                            Subscribe Our Newsletter
-                        </h2>
-                    </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="row">
+                                <div class="col-xs-11 col-sm-10 col-md-9">
+                                    <h3 class="main-title footer-title text-left">
+                                        <span>
+                                            Contact Us
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
 
-                        <form action="#" method="post" class="news-form">
-                            <i class="fa fa-envelope-o"></i>
-                            <input type="text" placeholder="Enter your email address" class="form-control">
-                            <button type="submit" class="btn-submit">Subscribe</button>
-                        </form>
+                            <div class="content">
+                                <p>
+                                    <i class="fa fa-map-marker"> </i>
+                                    <span>ADDRESS :</span>123, 295 DANIEL WEBSTER HWY,NASHUA, NH-03060
+                                </p>
+                                <p>
+                                    <i class="fa fa-phone"> </i>
+                                    <span>CALL US :</span> (603) 888-6003
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope-o"> </i>
+                                    <span>EMAIL US :</span> biryanipotorders@gmail.com
+                                </p>
+                                <h5>Follow us on :</h5>
+                                <ul class="mini-social">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="row">
+                                <div class="col-xs-11 col-sm-10 col-md-9">
+                                    <h3 class="main-title footer-title text-left">
+                                        <span>
+                                            Latest News
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <ul class="posts clearfix">
+                                <li>
+                                    <a href="blog-detail-page.html">
+                                        <img src="images/post.jpg" alt="" class="featured">
+                                    </a>
+                                    <h5>
+                                        <a href="blog-detail-page.html">
+                                            Lorem ipsum dolor sit amet, consectetu era adipiscing ligula.
+                                        </a>
+                                    </h5>
+                                    <p>December 14, 2017</p>
+                                </li>
+                                <li>
+                                    <a href="blog-detail-page.html">
+                                        <img src="images/post2.jpg" alt="" class="featured">
+                                    </a>
+                                    <h5>
+                                        <a href="blog-detail-page.html">
+                                            Lorem ipsum dolor sit amet, consectetu era adipiscing ligula.
+                                        </a>
+                                    </h5>
+                                    <p>December 14, 2017</p>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="footer-widget">
+                            <div class="row">
+                                <div class="col-xs-11 col-sm-10 col-md-9">
+                                    <h3 class="main-title footer-title text-left">
+                                        <span>
+                                            Gallery Pics
+                                        </span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <ul class="gallery clearfix">
+                                    <li>
+                                        <div>
+                                            <a href="images/gal-big.jpg" class="magni-link">
+                                                <img src="images/gal.jpg" alt="gallery pic">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="images/gal-big2.jpg" class="magni-link">
+                                                <img src="images/gal2.jpg" alt="gallery pic">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="images/gal-big3.jpg" class="magni-link">
+                                                <img src="images/gal3.jpg" alt="gallery pic">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="images/gal-big4.jpg" class="magni-link">
+                                                <img src="images/gal4.jpg" alt="gallery pic">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="images/gal-big5.jpg" class="magni-link">
+                                                <img src="images/gal5.jpg" alt="gallery pic">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="images/gal-big6.jpg" class="magni-link">
+                                                <img src="images/gal6.jpg" alt="gallery pic">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- newsletter section ends  -->
-        <?php
-        include('footer.php');
-        ?>
+        </footer>
+        <!-- footer ends -->
 
+        <div class="copyright">
 
-        
+            <p>
+                © Copyright | TastyBite 2018. All Right Reserved Developed By
+                <a href="#">Company Name</a>
+            </p>
+        </div>
     </div>
     <script src="js/jquery.1.12.4.js"></script>
     <script src="js/bootstrap.min.js"></script>

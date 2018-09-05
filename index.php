@@ -277,7 +277,9 @@
                 <div class="row">
                     <div class="col-md-5 col-xs-11">
                         <h2 class="main-title text-left">
-                            <span>Services</span>
+                            <span>Our Special Food                           
+                            </span>
+                            <p><p>Our ingredients are carefully chosen and expertly made to whet your appetite and keep your body happy.!</p>
                         </h2>
                     </div>
                 </div>
@@ -287,9 +289,10 @@
                             <div class="col-sm-6 col-md-12">
                                 <div class="service">
                                     <div class="icon">
-                                        <i class="flaticon-cake"></i>
+                                    <img src="images/news2.jpg" alt="about chef pic" class="img-responsive" style="position:relative";>
+                                    
                                     </div>
-                                    <h4 class="service-title">Birthday Party</h4>
+                                    <h4 class="service-title">Butter Chicken</h4>
                                     <p>
                                         Dolor sit amet consectetuer adipiscn elit commodo ligula eget dolor. Aenean etsa massa Cum sociis natoque.
                                     </p>
@@ -298,9 +301,9 @@
                             <div class="col-sm-6 col-md-12">
                                 <div class="service">
                                     <div class="icon">
-                                        <i class="flaticon-catering"></i>
+                                    <img src="images/news1.jpg" alt="about chef pic" class="img-responsive"  style="position:relative";>
                                     </div>
-                                    <h4 class="service-title">Charity Events</h4>
+                                    <h4 class="service-title">Signature Biryani</h4>
                                     <p>
                                         Dolor sit amet consectetuer adipiscn elit commodo ligula eget dolor. Aenean etsa massa Cum sociis natoque.
                                     </p>
@@ -319,25 +322,16 @@
                             <div class="col-sm-6 col-md-12">
                                 <div class="service">
                                     <div class="icon">
-                                        <i class="flaticon-fast-food"></i>
+                                       <img src="images/news3.jpg" alt="about chef pic" class="img-responsive"  style="position:relative";>
                                     </div>
-                                    <h4 class="service-title">Events Party</h4>
+                                    <h4 class="service-title">Chillies Paneer</h4>
                                     <p>
                                         Dolor sit amet consectetuer adipiscn elit commodo ligula eget dolor. Aenean etsa massa Cum sociis natoque.
                                     </p>
                                 </div>
+                                <a href="reservation.html" class="btn-custom">Go to Menu</a> 
                             </div>
-                            <div class="col-sm-6 col-md-12">
-                                <div class="service">
-                                    <div class="icon">
-                                        <i class="flaticon-table"></i>
-                                    </div>
-                                    <h4 class="service-title">Private Dinning</h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elit commodo ligula eget dolor. Aenean etsa massa Cum sociis natoque.
-                                    </p>
-                                </div>
-                            </div>
+
                         </div>
 
 
@@ -738,125 +732,10 @@
         </section>
         <!-- our chefs section ends -->
         <!-- blog section -->
-        <section class="blog-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="main-title text-left">
-                            <span class="bg-reverse">From Our Blogs</span>
-                        </h2>
-                    </div>
-                </div>
-                <div class="row center-grid">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="blog">
-                            <div class="featured-pic">
-                                <a href="blog-detail-page.html">
-                                    <img src="images/blog.jpg" alt="blog pic" class="img-responsive">
-                                </a>
-                            </div>
-
-                            <div class="content">
-                                <ul class="meta">
-                                    <li>
-                                        <i class="fa fa-calendar"></i> JAN 9, 2018
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-comments-o"></i>06
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-heart"></i> 12
-                                    </li>
-                                </ul>
-                                <h4 class="blog-title txt-hover">
-                                    <a href="blog-detail-page.html">Dolor sit amet consectetuer adipiscn</a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, elit. Aenean commodo ligula eget dolor. Aenean mas cum sociis natoque penatibus magnis dis.
-                                </p>
-                                <a href="blog-detail-page.html" class="btn-secondry">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="blog">
-                            <div class="featured-pic">
-                                <a href="blog-detail-page.html">
-                                    <img src="images/blog2.jpg" alt="blog pic" class="img-responsive">
-                                </a>
-                            </div>
-
-                            <div class="content">
-                                <ul class="meta">
-                                    <li>
-                                        <i class="fa fa-calendar"></i> JAN 9, 2018
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-comments-o"></i>06
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-heart"></i> 12
-                                    </li>
-                                </ul>
-                                <h4 class="blog-title txt-hover">
-                                    <a href="blog-detail-page.html">Dolor sit amet consectetuer adipiscn</a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, elit. Aenean commodo ligula eget dolor. Aenean mas cum sociis natoque penatibus magnis dis.
-                                </p>
-                                <a href="blog-detail-page.html" class="btn-secondry">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="blog">
-                            <div class="featured-pic">
-                                <a href="blog-detail-page.html">
-                                    <img src="images/blog3.jpg" alt="blog pic" class="img-responsive">
-                                </a>
-                            </div>
-
-                            <div class="content">
-                                <ul class="meta">
-                                    <li>
-                                        <i class="fa fa-calendar"></i> JAN 9, 2018
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-comments-o"></i>06
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-heart"></i> 12
-                                    </li>
-                                </ul>
-                                <h4 class="blog-title txt-hover">
-                                    <a href="blog-detail-page.html">Dolor sit amet consectetuer adipiscn</a>
-                                </h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet, elit. Aenean commodo ligula eget dolor. Aenean mas cum sociis natoque penatibus magnis dis.
-                                </p>
-                                <a href="blog-detail-page.html" class="btn-secondry">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- blog section ends -->
         <!-- call out section  -->
-        <section class="call-out-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10">
-                        <h2>Experience the real taste of our food.</h2>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="call-out-btn">
-                            <a href="contact.html" class="btn-custom">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <br>
         <!-- call out section ends -->
      

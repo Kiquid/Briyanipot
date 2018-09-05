@@ -91,8 +91,7 @@
 
                                 <div class="sub-title">
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eg dolor. Aenean mas cum sociis natoque penatibus
-                                        magnis dis.
+                                    Biryani Pot creating a wonderful dining experience for you & your family.
                                     </p>
                                 </div>
                             </div>
@@ -134,7 +133,7 @@
                                     <i class="fa fa-map-marker"></i>
                                 </div>
                                 <p class="title">Address:</p>
-                                <p>123, Street Name, City, Your Country 456, Street Name, City, Country</p>
+                                <p>123, 295 DANIEL WEBSTER HWY,NASHUA, NH-03060</p>
 
                             </li>
                             <li>
@@ -145,8 +144,8 @@
                                 </div>
                                 <p class="title">Cal Us:</p>
                                 <p>
-                                    +123-456-7890,
-                                    <br> +987-654-3210
+                                        (603) 888-6003
+                                    <br> 
                                 </p>
 
                             </li>
@@ -158,8 +157,8 @@
                                 </div>
                                 <p class="title">Email us:</p>
                                 <p>
-                                    support@ tastybite.com
-                                    <br> info@tastybite.com
+                                biryanipotorders@gmail.com
+                                    
                                 </p>
 
                             </li>
@@ -204,20 +203,7 @@
         </section>
 
         <!-- call out section  -->
-        <section class="call-out-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10">
-                        <h2>Experience the real taste of our food.</h2>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="call-out-btn">
-                            <a href="contact.html" class="btn-custom">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       
         <!-- call out section ends -->
         <!-- footer  -->
         <?php include('footer.php'); ?>

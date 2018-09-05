@@ -55,64 +55,9 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         Reservations
-                                        <span class="caret"></span>
+                                       
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                                Blog
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="blog-page.php">blog page</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-detail-page.php">blog detail page</a>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle">
-                                                Chef
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="chefs.php">Chefs </a>
-                                                </li>
-                                                <li>
-                                                    <a href="chef-detail.php">Chef detail </a>
-                                                </li>
-
-                                            </ul>
-                                        </li>
-
-                                        <li class="dropdown-submenu">
-                                            <a href="#" class="dropdown-toggle">
-                                                Gallery
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="gallery-two-column.php">Gallery Two Column</a>
-                                                </li>
-                                                <li>
-                                                    <a href="gallery-three-column-measonary.php">Gallery Three Column</a>
-                                                </li>
-                                                <li>
-                                                    <a href="gallery-four-column.php">Gallery Four Column</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="services.php">Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="404.php">404</a>
-                                        </li>
-                                    </ul>
+                                    
                                 </li>
 
                                 <li>

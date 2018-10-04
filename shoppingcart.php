@@ -1,4 +1,8 @@
-﻿<!doctype html>
+<?php
+include('config.php');
+?>
+
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -23,7 +27,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <!-- ====== scroll to top ====== -->
     <a id="toTopBtn" title="Go to top" href="javascript:void(0)">
@@ -190,7 +193,7 @@
         <section class="page-title">
             <div class="container">
                 <h2 class="title">
-                    Our Gallery
+                    Food Detail
                 </h2>
                 <ul class="brdcrumb clearfix">
                     <li>
@@ -200,185 +203,69 @@
                         <a href="#">Pages</a>
                     </li>
                     <li class="current">
-                        Gallery Two Column
+                        Food Details
                     </li>
                 </ul>
             </div>
         </section>
 
-
-        <!-- page section  -->
-        <section class="page-section  gallery-bg section-padding">
+        <section class="page-section foods-details-bg food-details  section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-1.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-1.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="col-md-8">          
+                    <?php
+                        $id = $_GET['menu'];
+                        $dish = "SELECT DISTINCT menu.Id,menu.* FROM menu join orders on menu.Id=orders.MenuId";
+                        $dishes = $conn->query($dish);
+                        
+                        ?>
+                         <table style="border:1px solid black">
+                             <tr style="border:1px solid black">
+                                 <th style="border:1px solid black">ID</th>
+                                 <th style="border:1px solid black">Name</th>
+                                 <th style="border:1px solid black">Price(each)</th>
+                                 <th style="border:1px solid black">Quantity</th>
+                                 <th style="border:1px solid black">Item Total</th>
+                                 <th style="border:1px solid black">Remove Item</th>
+                             </tr>
+                         <?php 
+                         while($row = $dishes->fetch_assoc()){                            
+                            ?>
+                             <tr>
+                                 <td style="border:1px solid black"><?php echo $row['Id'];?></td>
+                                 <td style="border:1px solid black"><?php echo $row['Name'];?></td>
+                                 <td style="border:1px solid black"><input type="hidden" id="price" value="<?php echo $row['Price'];?>"><?php echo $row['Price'];?></td>
+                                 <td style="border:1px solid black"><input type="text" name="quantity" id="quantity" onchange="quantity()"></td>
+                                 <td style="border:1px solid black"><input type="text" id="total_price" readonly><div id="total_price"></div></td>
+                                 <td style="border:1px solid black"><i class="fa fa-trash"></i></td>
+                             </tr>
+                        <?php } ?>        
+                         </table>
+                        <!-- dish slider ends -->
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-2.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-2.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="col-md-4">
+                        <!-- food card  -->
+                        <div class="food-card">
+                            <h3 class="title"><?php echo $row['Name'];?></h3>
+                            <p><b>SubTotal :</b> <div id="subtotal">da</div></p>
+                            <p><b>Tax :</b> <div id="totaltax">da</div></p>
+                            <p><b>Conveninence Fee :</b> <div id="totalfee">da</div></p>
+                            <p><b>Total Amount :</b> <div id="totalamount">da</div></p>
+                            <p><b>Order To :</b> <input type="radio" name="order" value="pick up">Pick Up
+                                    <input type="radio" name="order" value="deliver">Deliver
+                                    <input type="radio" name="order" value="dine in">Dine In</p>
+                            <p><b>Total Amount :</b> da</p>
+                             
+                            <p><b>Total Amount :</b>
+                                <textarea name="special_instructions"></textarea>
+                            </p>
+                            <button class="btn-custom"> Place Order </button>
                     </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-3.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-3.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-4.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-4.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-5.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-5.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-6.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-6.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pagi m-top20">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa fa-angle-left"></i>Prev</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">...</a>
-                        </li>
-                        <li>
-                            <a href="#">Next<i class="fa fa-angle-right"></i></a>
-                        </li>
-                    </ul>
                 </div>
             </div>
+
         </section>
-        <!-- page section ends  -->
+        <!-- our chefs section ends -->
         <!-- call out section  -->
         <section class="call-out-section section-padding">
             <div class="container">
@@ -395,8 +282,8 @@
             </div>
         </section>
         <!-- call out section ends -->
-          <!-- footer  -->
-          <footer class="footer section-padding">
+        <!-- footer  -->
+        <footer class="footer section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
@@ -572,6 +459,16 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    function quantity(){
+        var price = $("#price").val();
+        var quantity = $("#quantity").val();
+        var totalprice = price * quantity;
+         document.getElementById('total_price').value = totalprice;      
+         console.log(price.length);
+           
+    }
+    </script>
 </body>
 
 </html>

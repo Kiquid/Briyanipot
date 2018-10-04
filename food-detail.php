@@ -1,4 +1,7 @@
-﻿<!doctype html>
+﻿<?php
+include('config.php');
+?>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -23,7 +26,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <!-- ====== scroll to top ====== -->
     <a id="toTopBtn" title="Go to top" href="javascript:void(0)">
@@ -190,7 +192,7 @@
         <section class="page-title">
             <div class="container">
                 <h2 class="title">
-                    Our Gallery
+                    Food Detail
                 </h2>
                 <ul class="brdcrumb clearfix">
                     <li>
@@ -200,185 +202,266 @@
                         <a href="#">Pages</a>
                     </li>
                     <li class="current">
-                        Gallery Two Column
+                        Food Details
                     </li>
                 </ul>
             </div>
         </section>
-
-
-        <!-- page section  -->
-        <section class="page-section  gallery-bg section-padding">
+    
+        <section class="page-section foods-details-bg food-details  section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-1.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-1.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
+                    <div class="col-md-8">
+                        <!-- food mega slider  -->
+                        <div class="food-slider owl-carousel">
+                            <div class="item">
+                                <img src="images/food/food1.jpg" alt="food pic">
+                            </div>
+                            <div class="item">
+                                <img src="images/food/food2.jpg" alt="food pic">
+                            </div>
+                            <div class="item">
+                                <img src="images/food/food3.jpg" alt="food pic">
+                            </div>
+                            <div class="item">
+                                <img src="images/food/food4.jpg" alt="food pic">
+                            </div>
+                        </div>
+                        <!-- food mega slider ends  -->
+                        <!-- food thumb slider sync -->
+                        <div class="food-thumb-slider-container">
+                            <div class="thumb-slider-inner">
+                                <div class="food-thumb-slider owl-carousel">
+                                    <div class="item">
+                                        <img src="images/food/food-thumb1.jpg" alt="food pic">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/food/food-thumb2.jpg" alt="food pic">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/food/food-thumb3.jpg" alt="food pic">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/food/food-thumb4.jpg" alt="food pic">
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-2.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-2.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
+                        <!-- food thumb slider ends -->
+                        <!-- description -->
+                        <div class="row">
+                            <div class="col-xs-11 col-sm-8 col-md-5">
+                                <h3 class="main-title text-left">
+                                    <span>
+                                        Description
+                                    </span>
+                                </h3>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-3.jpg" alt="gallery pic">
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit et. Aenean commodo ligula eg dolor. Aenean massa. Cum soci nat oque
+                                penatibus magnis dis parturient monte nascet urid icul us mus. Donec quam felis, ultricies
+                                nec. Sectetuer adipising eli. Aenean commodo eg cos dolor en an massa. Cum sociis natoq penat
+                                us magnis dis parturient montes, nascet ridiculu mus. Dolor sit amet consectetuer adipiscn
+                                elit commodo ligua la eget dolor. Aenean etsa massa Cum sociis natoque et penat us magnis
+                                dis.
+                            </p>
+                        </div>
+                        <!-- description ends -->
 
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-3.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-11 col-sm-8 col-md-6">
+                                <h3 class="main-title text-left">
+                                    <span>
+                                        You May Also Like
+                                    </span>
+                                </h3>
                             </div>
-
                         </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-4.jpg" alt="gallery pic">
+                        <!-- dish slider  -->
+                        <div class="dish-slider testy-slider   owl-carousel" data-items="2" data-margin="20" data-loop="true" data-smart-speed="400"
+                             data-dots="true" data-nav="false" data-r-x-small="1" data-r-x-small-nav="false" data-r-x-small-dots="true"
+                             data-r-x-medium="2" data-r-x-medium-nav="false" data-r-x-medium-dots="true" data-r-small="2" data-r-small-nav="false"
+                             data-r-small-dots="true" data-r-medium="3" data-r-medium-nav="false" data-r-medium-dots="true" data-r-large="4"
+                             data-r-large-nav="false" data-r-large-dots="true">
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish1.jpg" alt="special dish">
 
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-4.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
+                                    <span>chinese Food</span>
+                                </a>
+
                             </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish2.jpg" alt="special dish">
+                                    <span>Grilled Sandwich</span>
+                                </a>
 
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-5.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-5.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
                             </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish3.jpg" alt="special dish">
+                                    <span>vegetables mix</span>
+                                </a>
 
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="grid-gal">
-                            <div class="gal-content">
-                                <div class="gal-pic">
-                                    <img src="images/gallery/2column-pic-6.jpg" alt="gallery pic">
-
-                                </div>
-                                <div class="gal-details">
-                                    <h4 class="gal-title">
-                                        <a href="#">  Your Title Here</a>
-                                    </h4>
-                                    <p>
-                                        Dolor sit amet consectetuer adipiscn elita
-                                        <br> commo ligul et.
-                                    </p>
-                                    <a href="images/gallery/2column-pic-6.jpg" class="expand gallery-popup">
-                                        <i class="fa fa-expand"></i>
-                                    </a>
-                                </div>
                             </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish1.jpg" alt="special dish">
+                                    <span>chinese Food</span>
+                                </a>
 
+                            </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish2.jpg" alt="special dish">
+                                    <span>Grilled Sandwich</span>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish1.jpg" alt="special dish">
+
+                                    <span>chinese Food</span>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish3.jpg" alt="special dish">
+                                    <span>vegetables mix</span>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish1.jpg" alt="special dish">
+                                    <span>chinese Food</span>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish3.jpg" alt="special dish">
+                                    <span>vegetables mix</span>
+                                </a>
+
+                            </div>
+                            <div class="item">
+                                <a href="food-detail.html">
+                                    <img src="images/chefs/dish1.jpg" alt="special dish">
+                                    <span>chinese Food</span>
+                                </a>
+
+                            </div>
                         </div>
+                        <!-- dish slider ends -->
                     </div>
-                </div>
+    <?php
+    $id = $_GET['id'];
+    $dish = "SELECT Id,Name,Description,Price,Tax,Type,ConvenienceFee from menu where Id=$id";
+    $dishes = $conn->query($dish);
+    while($row = $dishes->fetch_assoc()){
+    ?>
+                    <div class="col-md-4">
+                        <!-- food card  -->
+                        <div class="food-card">
+                            <h3 class="title"><?php echo $row['Name'];?></h3>
 
-                <div class="pagi m-top20">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa fa-angle-left"></i>Prev</a>
-                        </li>
-                        <li>
-                            <a href="#" class="active">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                        <li>
-                            <a href="#">4</a>
-                        </li>
-                        <li>
-                            <a href="#">...</a>
-                        </li>
-                        <li>
-                            <a href="#">Next<i class="fa fa-angle-right"></i></a>
-                        </li>
-                    </ul>
+                            <!--<ul class="details clearfix">
+                                <li>
+                                    CHEF :
+                                    <span>SERENA DOE</span>
+                                </li>
+                                <li>
+                                    Serve :
+                                    <span>2 People</span>
+                                </li>
+                                <li>
+                                    Review :
+                                    <span>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </li>
+
+                                <li>
+                                    Calories :
+                                    <span>200 : kcal</span>
+                                </li>
+                                <li>
+                                    Cooking hours :
+                                    <span>30 min</span>
+                                </li>
+                            </ul>-->
+
+
+                            <!--<p class="text-hard">Ingridients</p>
+                            <ul class="food-list">
+
+                                <li>1 Teaspoon Chia Seeds</li>
+                                <li>1/2 Cups Chopped Hazelnuts, Divided Use</li>
+                                <li>1/2 Cups penut Butter.</li>
+                                <li>1/2 Cups Coconut Oil 0(in Solid Form)</li>
+                            </ul>-->
+                            <p>
+                                <?php echo $row['Description']; ?>
+                            </p>
+                            <button class="btn-custom" data-toggle="modal" data-target="#myModal"> +ORDER </button>
+                        </div>
+
+                        <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Special Instructions</h4>
+      </div>
+      <div class="modal-body">
+          <form method="post" class="reserv-form">
+              <input type="hidden" name="id" value="<?php echo $row['Id'];?>"
+          <div class="input-box">
+              <label>How Spicy :</label>
+              <select name="spicy"> 
+                  <option value="mild">Mild</option>
+                  <option value="medium">Medium</option>
+                  <option value="spicy">Spicy</option>
+              </select>
+          </div>
+          
+          <div class="input-box">
+              <label>Special Instructions :</label>
+          </div>
+          <div class="input-box">
+              <textarea name="special_instructions"></textarea>
+          </div>
+          <button type="submit" name="submit" class="btn-secondry" value="submit">Continue</button>
+
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<?php } ?>
+                        <!-- food card ends -->
+                    </div>
                 </div>
             </div>
+            
         </section>
-        <!-- page section ends  -->
+        <!-- our chefs section ends -->
         <!-- call out section  -->
         <section class="call-out-section section-padding">
             <div class="container">
@@ -395,8 +478,8 @@
             </div>
         </section>
         <!-- call out section ends -->
-          <!-- footer  -->
-          <footer class="footer section-padding">
+        <!-- footer  -->
+        <footer class="footer section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
@@ -575,3 +658,22 @@
 </body>
 
 </html>
+<?php
+if(isset($_POST['submit'])){
+    $id = $_POST['id'];
+    $spicy = $_POST['spicy'];
+    $special_instructions = $_POST['special_instructions'];
+   
+    $insert_instructions = $conn->prepare("INSERT into orders(MenuId,Spicy,SpecialInstructions) values(?,?,?)");
+    $insert_instructions->bind_param('sss',$id,$spicy,$special_instructions);
+    if($insert_instructions->execute() == true){
+       // echo "<script>alert('inserted successfuly...')</script>";
+       // header('location:shoppingcart.php?menu= $id');
+       echo "<script> window.location.assign('shoppingcart.php'); </script>";
+    }
+    else{
+        echo "<script>alert('Error inserting data')</script>";
+    }
+}
+
+?>
